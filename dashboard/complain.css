@@ -1,0 +1,726 @@
+body{
+    background-color: #0f172a;
+    font-family: 'Roboto', sans-serif;
+    color: #737373;
+}
+
+/*header*/
+header{
+    background-color: #525252;
+    color: #0a0a0a;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.header-center{
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+   
+}
+
+.main-container{
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.input-search{
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   border-radius: 10px;
+   border-style: none;
+   font-weight: 750;
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.input-search::placeholder{
+    text-align: center;
+    font-weight: 650;
+    color: #525252;
+}
+
+.input-search:focus{
+    border-style: none;
+}
+
+/*for asides*/
+aside{
+    float: left;
+    background-color: #0a0a0a;
+    color: #525252;
+    padding: 20px 15px 20px 15px;
+    margin: 10px 15px  10px 15px;
+    border-radius: 15px;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.aside-postiton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5{
+    margin: 50px 0px 50px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #525252;
+    border-radius: 10px;
+    background-color: #a3a3a3;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover{
+    background-color: #0a0a0a;
+    color: #525252;
+    transition: 0.5s ease-in-out;
+
+}
+/*for main*/
+
+.main-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item-align-1, .item-align-2, .item-align-3, .item-align-5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-align-4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.position-input-1, .position-input-2, .complain-input-1, .complain-input-2, .complain-input-3,
+.suspect-input-1, .suspect-input-2 .narative-input-1, .narative-input-2,
+.auth-input-1, .auth-input-2
+{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suspect-input-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*for firt inputs*/
+.item-align-1{
+    margin-bottom: 50px;
+}
+.date-inputs, .number-inputs{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #6b7280;
+    font-weight: 800;
+    
+}
+.time-inputs, .text-inputs{
+    margin-bottom: 15px;
+   
+    color: #6b7280;
+    font-weight: 800;
+}
+
+.time-design, .date-designs, .number-designs{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text-designs{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 80px;
+    
+}
+
+
+
+.data-designs[type="date"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+   
+}
+
+.data-designs[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  /* Hide the date picker icon in Chrome */
+.data-designs[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+.data-designs[type="date"]::placeholder {
+    color: transparent;
+  }
+  /* Optional: Custom hover and focus effects */
+.data-designs[type="date"]:hover,
+.data-designs[type="date"]:focus {
+     /* Change border color on hover/focus */
+    outline: none; /* Remove the focus outline */
+  }
+
+
+/**/
+
+/* Basic style for the time input */
+.time-design-2[type="time"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+    width: 135px;
+  }
+  
+  /* Hide the clock icon in Chrome */
+.time-design-2[type="time"]::-webkit-calendar-picker-indicator {
+    color: #525252;
+    font-size: 15px;
+  }
+  
+  /* Focus state with a border effect */
+.time-design-2[type="time"]:focus {
+    outline: none;
+    
+  }
+  
+  /* Optional: Placeholder text hidden for Firefox */
+.time-design-2[type="time"]::-moz-placeholder {
+    color: transparent; /* Firefox specific placeholder */
+  }
+  
+  /* For other browsers to hide placeholder */
+.time-design-2[type="time"]::placeholder {
+    color: transparent;
+  }
+
+/**/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Removes the spinners */
+  margin: 0; /* Ensures no extra margin is left behind */
+}
+
+.number-designs-2[type="number"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+    width: 135px;
+  }
+  
+  /* Hide the clock icon in Chrome */
+.number-designs-2[type="number"]::-webkit-calendar-picker-indicator {
+    color: #525252;
+    font-size: 15px;
+    display: none;
+  }
+  
+  /* Focus state with a border effect */
+.number-designs-2[type="number"]:focus {
+    outline: none;
+    
+  }
+  
+  /* Optional: Placeholder text hidden for Firefox */
+.number-designs-2[type="number"]::-moz-placeholder {
+    color: transparent; /* Firefox specific placeholder */
+  }
+  
+  /* For other browsers to hide placeholder */
+.number-designs-2[type="number"]::placeholder {
+    color: transparent;
+  }
+
+  /**/
+
+  /* Style for the text input with only a bottom border */
+.text-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    width: 135px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.text-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  .item-align-1{
+    margin-top: 80px;
+}
+  
+
+
+/*for complain inputs*/
+
+
+.complain-text-inputs, .complain-age-inputs, .complain-bday-inputs,
+.complain-ctz-inputs, .complain-addrs-inputs, .complain-birhtplce-inputs,
+.complain-civil-inputs, .complain-provincial-inputs, .complain-number-inputs
+{
+    margin-bottom: 15px;
+
+    color: #6b7280;
+    font-weight: 800;
+}
+
+
+
+.complain-text-designs, .complain-age-designs, .complain-bday-designs,
+.complain-ctz-designs, .complain-birhtplce-designs, .complain-civil-designs,
+.complain-provincial-designs, .complain-number-designs
+{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+.complain-addrs-designs{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 40px;
+    margin-right: 10px;  
+}
+
+/**/
+
+.suspect-ctz-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    width: 100px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.suspect-ctz-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  /**/
+
+.complain-age-designs-2[type="number"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+    width: 155px;
+  }
+  
+  /* Hide the clock icon in Chrome */
+.complain-age-designs-2[type="number"]::-webkit-calendar-picker-indicator {
+    color: #525252;
+    font-size: 15px;
+    display: none;
+  }
+  
+  /* Focus state with a border effect */
+.complain-age-designs-2[type="number"]:focus {
+    outline: none;
+    
+  }
+  
+  /* Optional: Placeholder text hidden for Firefox */
+.complain-age-designs-2[type="number"]::-moz-placeholder {
+    color: transparent; /* Firefox specific placeholder */
+  }
+  
+  /* For other browsers to hide placeholder */
+.complain-age-designs-2[type="number"]::placeholder {
+    color: transparent;
+}
+
+/**/
+
+.complain-bday-designs-2[type="date"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    width: 118px;
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+   
+}
+
+.complain-bday-designs-2[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  /* Hide the date picker icon in Chrome */
+.complain-bday-designs-2[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+.complain-bday-designs-2[type="date"]::placeholder {
+    color: transparent;
+  }
+  /* Optional: Custom hover and focus effects */
+.complain-bday-designs-2[type="date"]:hover,
+.complain-bday-designs-2[type="date"]:focus {
+     /* Change border color on hover/focus */
+    outline: none; /* Remove the focus outline */
+  }
+
+/**/
+
+.complain-addrs-designs-2, .complain-provincial-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+  
+    width: 120px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.complain-addrs-designs-2, .complain-provincial-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  /**/
+
+.complain-numbers-designs-2[type="number"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+    width: 155px;
+  }
+  
+  /* Hide the clock icon in Chrome */
+.complain-numbers-designs-2[type="number"]::-webkit-calendar-picker-indicator {
+    color: #525252;
+    font-size: 15px;
+    display: none;
+  }
+  
+  /* Focus state with a border effect */
+.complain-numbers-designs-2[type="number"]:focus {
+    outline: none;
+    
+  }
+  
+  /* Optional: Placeholder text hidden for Firefox */
+.complain-numbers-designs-2[type="number"]::-moz-placeholder {
+    color: transparent; /* Firefox specific placeholder */
+  }
+  
+  /* For other browsers to hide placeholder */
+.complain-numbers-designs-2[type="number"]::placeholder {
+    color: transparent;
+}
+
+.item-align-2{
+    margin-bottom: 50px;
+}
+
+
+
+/*FOR SUSPECT INPUTS*/
+
+.suspect-text-inputs, .suspect-age-inputs, .suspect-ctz-inputs, .suspect-civil-inputs,
+.suspect-addres-inputs
+{
+    margin-bottom: 15px;
+
+    color: #6b7280;
+    font-weight: 800
+}
+
+.suspect-text-designs, .suspect-age-designs, .suspect-ctz-designs, 
+.suspect-civil-designs, .suspect-addres-designs,
+.suspect-male-designs, .suspect-female-designs
+{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.suspect-male-radio, .suspect-female-radio{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 800
+}
+/**/
+.suspect-text-designs-2, .suspect-civil-designs-2, .suspect-addres-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    width: 135px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.suspect-text-designs-2, .suspect-civil-designs-2, .suspect-addres-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  /**/
+
+.suspect-age-designs-2[type="number"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: none;
+    
+    border: none;
+    border-bottom: 2px solid #525252; /* Only bottom border */
+    background: none; /* Transparent background */
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+    width: 155px;
+  }
+  
+  /* Hide the clock icon in Chrome */
+.suspect-age-designs-2[type="number"]::-webkit-calendar-picker-indicator {
+    color: #525252;
+    font-size: 15px;
+    display: none;
+  }
+  
+  /* Focus state with a border effect */
+.suspect-age-designs-2[type="number"]:focus {
+    outline: none;
+    
+  }
+  
+  /* Optional: Placeholder text hidden for Firefox */
+.suspect-age-designs-2[type="number"]::-moz-placeholder {
+    color: transparent; /* Firefox specific placeholder */
+  }
+  
+  /* For other browsers to hide placeholder */
+.suspect-age-designs-2[type="number"]::placeholder {
+    color: transparent;
+}
+
+/**/
+
+.complain-text-designs-2, .complain-ctz-designs-2, .complain-birhtplce-designs-2, 
+.complain-civil-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    width: 135px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.complain-text-designs-2, .complain-ctz-designs-2, .complain-birhtplce-designs-2,
+.complain-civil-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  .item-align-3{
+    margin-bottom: 50px;
+}
+
+  /*FOR NARATIVE INCIDENT DESIGNS*/
+
+
+.narative-dnt-inputs, .narative-text-input, .narative-d-and-t-inputs{
+    margin-bottom: 15px;
+
+    color: #6b7280;
+    font-weight: 800
+}
+
+.narative-dnt-designs, .narative-text-designs, .narative-d-and-t-designs{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/**/
+
+/* Remove default appearance in WebKit-based browsers (Chrome, Safari) */
+.narative-dnt-designs-2, .narative-d-and-t-designs-2::-webkit-inner-spin-button,
+.narative-dnt-designs-2, .narative-d-and-t-designs-2::-webkit-calendar-picker-indicator {
+  display: none; /* Hides the calendar and spinner icons */
+}
+
+/* Remove default styles in Firefox */
+.narative-dnt-designs-2, .narative-d-and-t-designs-2 {
+  -moz-appearance: textfield; /* Remove default styling in Firefox */
+  appearance: none; /* Remove default styling in other browsers */
+  
+  border: none; /* Remove all borders */
+  border-bottom: 2px solid #525252; /* Only bottom border */
+  background: none; /* Transparent background */
+ /* Add padding for spacing */
+  font-size: 16px; /* Set font size */
+  width: 135px; /* Full width input */
+  color: #525252;
+}
+
+/* Focus state to change the bottom border color on focus */
+.narative-dnt-designs-2, .narative-d-and-t-designs-2:focus {
+  outline: none; /* Remove default outline */
+   /* Change bottom border color when focused */
+}
+
+
+
+/* Optional: Same for Firefox */
+.narative-dnt-designs-2, .narative-d-and-t-designs-2::-moz-placeholder {
+  color: transparent; /* Hides placeholder text in Firefox */
+}
+
+/**/
+
+.narative-text-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    width: 135px;; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.narative-text-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  .item-align-4{
+    margin-bottom: 50px;
+}
+
+/*FOR AUTHENTICATION DESIGN*/
+
+.auth-inputs-designs, .disposition-input-designs, .desk-off-input-designs{
+    font-size: 20px;
+    color: #525252;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin-bottom: 15px;
+    font-weight: 550;
+    font-weight: 800
+}
+
+/**/
+
+.auth-inputs-designs-2, .disposition-input-designs-2, .desk-off-input-designs-2[type="text"] {
+    border: none; /* Remove all default borders */
+    border-bottom: 2px solid #525252; /* Add only a bottom border */
+    background: none; /* Set background to transparent */
+    color: #525252;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 200px; /* Make the input take full width (optional) */
+  }
+  
+  /* Optional: Add focus effect for better user experience */
+.auth-inputs-designs-2, .disposition-input-designs-2, .desk-off-input-designs-2[type="text"]:focus {
+    outline: none; /* Remove the default outline on focus */
+    
+  }
+
+  /*for footer btn*/
+
+.footer-btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btns{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #44403c;
+    color: #d6d3d1;
+    cursor: pointer;
+    font-weight: 650;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btns:hover{
+    background-color: #d6d3d1;
+    color: #44403c;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
