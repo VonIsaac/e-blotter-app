@@ -7,25 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <header class=" header-signup">
+    <header class="header-signup">
         <h1>E-BLOTTER FOR BARANGAY POBLACION</h1>
     </header>
-    <main class=" signup-center">
-        <div class=" border-signup">
-            <h1 class="h1-signup">Creat New Account</h1>
-            <form action="#" class=" form-signup">
+    <main class="signup-center">
+        <div class="border-signup">
+            <h1 class="h1-signup">Create New Account</h1>
+            <form id="signupForm" class="form-signup">
                 <label for="name" class="label-names">Name</label>
-                <input type="text" name="text" id="" class="input-names">
+                <input type="text" name="name" id="name" class="input-names">
 
                 <label for="email" class="label-emails">Email</label>
-                <input type="email" name="email" id="" class="input-emails" required>
+                <input type="email" name="email" id="email" class="input-emails" required>
 
                 <label for="password" class="label-password">Password</label>
-                <input type="password" name="password" id="" class="input-password" required>
-                <button class=" signup-btn">Sign Up</button>
+                <input type="password" name="password" id="password" class="input-password" required>
+
+                <button type="submit" class="signup-btn">Sign Up</button>
                 <p>Already Registered? <a href="/index.html" class="signup-a">Log in</a></p>
             </form>
         </div>
     </main>
 </body>
+<script src="./js/signup.js"></script>
 </html>
