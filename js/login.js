@@ -23,18 +23,15 @@ document.querySelector('.form-login').addEventListener('submit', async function(
             alert("Invalid credentials or something went wrong.");
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-
         const result = await response.json();
+         // Store user_id in cookies upon successful login
+         document.cookie = `user_id=${result.user_id}; path=/;`;
+        console.log(result)
         alert('Login successful');
-        console.log(result);
+        window.location.href = './dashboard/complain.html';  
 
-        // Optionally redirect or take further actions after successful login
-        // window.location.href = '/dashboard.html';  // Example redirect
+      
     } catch (error) {
         console.error('An error occurred:', error.message);
-    } finally {
-        // Clear input fields
-        emailInput.value = '';
-        passwordInput.value = '';
-    }
+    } 
 });
