@@ -1,0 +1,104 @@
+/* Sidebar styling */
+aside {
+    background-color: #858585;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    max-height: 500px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 0.3s ease-in-out;
+    position: fixed; /* Keep it fixed on scroll */
+    top: 20%;
+    left: 0;
+    width: 250px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .aside-postiton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #525252;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1d1d1d;
+  }
+  
+  .sidebar-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    aside {
+        width: 60px; /* Shrink sidebar on smaller screens */
+    }
+  
+    .btn {
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: none;
+    }
+  
+    .btn:hover {
+        background-color: #3a3a3a;
+    }
+  
+    .btn-1::before {
+        content: '🏠'; /* Use icons for each button on mobile */
+        font-size: 20px;
+        margin-right: 10px;
+    }
+  
+    /* Hide text when sidebar shrinks */
+    aside:hover {
+        width: 200px;
+    }
+  }
+  
+  
+  /* Button styling */
+  .btn-1, .btn-2, .btn-3, .btn-4, .btn-5 {
+    padding: 10px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #525252;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover {
+    background-color: #0a0a0a;
+    color: #fff;
+  }
+  
