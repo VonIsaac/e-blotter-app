@@ -35,6 +35,7 @@ header {
   padding: 15px;
 }
 
+
 /* Input styling */
 .input-search {
   padding: 10px 15px;
@@ -56,6 +57,7 @@ header {
 .input-search:focus {
   outline: none;
 }
+
 
 /* Main content */
 .main-align {
@@ -195,4 +197,33 @@ h1 {
 /* Hover effect */
 .form-submit:hover {
 opacity: 0.8;
+}
+
+.footer-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 150px;
+}
+
+.btns{
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border-style: none;
+  color: #0c0a09;
+  background-color: #44403c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btns:hover{
+  background-color: #525252;
+  color: #1c1917;
 }

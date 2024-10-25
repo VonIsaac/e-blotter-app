@@ -8,7 +8,7 @@ function getCookie(name) {
 // Check for user_id cookie
 const userId = getCookie('user_id');
 
-if (!userId) {
+/*if (!userId) {
     // If no user_id is found in cookies, redirect to login page
     window.location.href = '/index.html';  // Redirect to login
-}
+}*/
