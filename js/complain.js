@@ -1,7 +1,17 @@
+
+
+
 document.querySelector('.complain-form').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent the default form submission
+        function generateRandomId(){
+            return 'CASE_NO_' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+
+        }
+
+
 
     const complaintData = {
+        id: generateRandomId(),
         date: document.getElementById('complaint-date').value,
         time: document.getElementById('complaint-time').value,
         complaint_no: document.getElementById('complaint-number').value, // Aligned key
@@ -35,6 +45,8 @@ document.querySelector('.complain-form').addEventListener('submit', async (event
             },
             body: JSON.stringify(complaintData),
         });
+        
+        console.log(response)
 
         if (response.ok) {
             alert('Data successfuly added');
