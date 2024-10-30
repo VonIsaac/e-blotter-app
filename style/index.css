@@ -1,8 +1,39 @@
-body{
-    background-color: #0f172a;
-    font-family: 'Roboto', sans-serif;
-}
-
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*header*/
+header {
+    background-color: #FFFFFF;
+    color: #eb1212;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  .header-center h3 {
+    margin: 0 auto;
+    font-size: 32px;
+  
+  }
+  
+  .main-container {
+    margin-top: 80px;
+    margin-bottom: 200px;
+    padding: 15px;
+  }
 
 /* for log in form*/
 
@@ -21,10 +52,11 @@ body{
 }
 .h1-login{
     text-align: center;
-    color: #030712;
+    color: #a3a3a3;
     text-transform: uppercase;
     font-weight: 750;
     font-size: 45px;
+    letter-spacing: 1px;
 }
 
 .label-email{
@@ -34,6 +66,7 @@ body{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px;
+    color: #a3a3a3;
 }
 
 .input-email{
@@ -63,6 +96,7 @@ body{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px;
+    color: #a3a3a3;
 }
 
 .input-pass{
@@ -96,6 +130,10 @@ body{
     transition: 0.3s ease-in-out;
 }
 
+.p-registerd{
+    color: #a3a3a3;
+    letter-spacing: 1px;
+}
 
 .login-a{
     font-weight: 900;
@@ -103,7 +141,7 @@ body{
 
 }
 .login-a:hover{
-    color: #525252;
+    color: #a3a3a3;
     transition: 0.2s ease;
 }
 a{
@@ -123,9 +161,10 @@ a{
     padding-right: 15px;
     width: 30rem;
     height: 25rem;
-    background-color: #a8a29e;
+    background-color: #44403c;
     border-radius: 15px;
     border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 
@@ -150,10 +189,11 @@ a{
 
 .h1-signup{
     text-align: center;
-    color: #030712;
+    color: #a3a3a3;
     text-transform: uppercase;
     font-weight: 750;
-    font-size: 30px;
+    font-size: 35px;
+    letter-spacing: 1px;
 }
 
 .signup-center{
@@ -169,7 +209,7 @@ a{
     padding-right: 15px;
     width: 30rem;
     height: 25rem;
-    background-color: #a8a29e;
+    background-color: #44403c;
     border-radius: 15px;
     border-style: none;
 }
@@ -188,6 +228,8 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px; 
+    color: #a3a3a3;
+
 }
 .input-names{
     width: 25rem;
@@ -199,7 +241,7 @@ a{
     margin-top: 5px;
     margin-bottom: 15px;
     color: #1c1917;
-    background-color: #737373; 
+    background-color: #737373;
 }
 .label-emails{
     display: block;
@@ -208,6 +250,7 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px;  
+    color: #a3a3a3;
 }
 
 .input-emails{
@@ -230,6 +273,7 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px; 
+    color: #a3a3a3;
 }
 
 .input-password{
@@ -263,12 +307,17 @@ a{
     transition: 0.3s ease-in-out;
 }
 
+.p-signup-registerd{
+    color: #a3a3a3;
+    letter-spacing: 1px;
+}
+
 .signup-a{
     font-weight: 900;
     cursor: pointer;
 
 }
 .signup-a:hover{
-    color: #525252;
+    color: #a3a3a3;
     transition: 0.2s ease;
 }

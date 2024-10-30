@@ -30,28 +30,35 @@ const getAllOngoingData = (data) => {
         const wrapDiv = document.createElement('div');
         wrapDiv.classList.add('complain-wrap');
 
+
+        //creat an another div tp wrap the name and complain
+        const complainName = document.createElement('div');
+        complainName.classList.add('names-complain');
+
         //creat an h1 element to show the complainant name
        const complainNames =  document.createElement('h1');
        complainNames.classList.add('complain-name')
        complainNames.textContent = `${ongoing.name}`
-       wrapDiv.appendChild(complainNames);
+       complainName.appendChild(complainNames);
 
        //creat an p element to show the type of complain
         const typeComplain = document.createElement('p');
         typeComplain.classList.add('type-complain')
         typeComplain.textContent =`${ongoing.type_of_complaint}`
-        wrapDiv.appendChild(typeComplain);
+        complainName.appendChild(typeComplain);
 
+        wrapDiv.appendChild(complainName)
 
         //creat a div for buttons 
         const divsBtns = document.createElement('div');
         divsBtns.classList.add('container-btns');
-        
+        divsBtns.style.display = 'none';  // Hide buttons initially
+
         //creat a buttons
         const doneBtn = document.createElement('button')
-        doneBtn.textContent = 'Done'
+        doneBtn.textContent = 'Mark  Done'
         const clearBtn = document.createElement('button')
-        clearBtn.textContent = 'clear'
+        clearBtn.textContent = 'Add Note'
 
         //append the two buttons
         divsBtns.appendChild(doneBtn);
@@ -64,6 +71,16 @@ const getAllOngoingData = (data) => {
         divs.appendChild(wrapDiv);
 
         
+
+        //toggle the buttons to show and hide
+        complainName.addEventListener('click', () => {
+            if( divsBtns.style.display ===  'none'){
+                divsBtns.style.display = 'flex'; 
+            }else{
+                divsBtns.style.display = 'none'; 
+            }
+        });
+
 
        return divs;
 
