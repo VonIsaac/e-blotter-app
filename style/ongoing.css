@@ -1,143 +1,134 @@
 body {
-    background-color: gray;
-    font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-/*header*/
-header {
-    background-color: #FFFFFF;
-    color: #eb1212;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 20px;
-  }
-  
-  .header-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Makes it responsive */
-  }
-  
-  .header-center h3 {
-    margin: 0 auto;
-    font-size: 32px;
-  
-  }
-  
-  .main-container {
-    margin-top: 80px;
-    margin-bottom: 200px;
-    padding: 15px;
-  }
-  
-  /* Input styling */
-  .input-search {
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 750;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    width: 100%; /* Full width for responsiveness */
-    max-width: 400px;
-    margin-bottom: 15px;
-  }
-  
-  .input-search::placeholder {
-    text-align: center;
-    font-weight: 650;
-    color: #525252;
-  }
-  
-  .input-search:focus {
-    outline: none;
-  }  
-
-
-  /*for main*/
-  .main-container {
-    margin-top: 80px;
-    margin-bottom: 200px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: gray; /* Light gray background for contrast */
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.ongoing-elements{
+/* Header */
+header {
+  background-color: #ffffff;
+  color: #eb1212;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.header-center h3 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Main Container */
+.main-container {
+  margin-top: 80px;
+  margin-bottom: 200px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Input Styling */
+.input-search {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 750;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.input-search::placeholder {
+  text-align: center;
+  font-weight: 650;
+  color: #525252;
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+/* Ongoing Elements */
+.container {
   background-color: #737373;
-  width: 50%;
-  height: 500px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 8px;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 800px; /* Set a maximum width */
+  height: auto; /* Adjust height automatically */
+  padding: 40px; /* Padding for inner spacing */
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  
+  margin: 20px 0; /* Space between elements */
 }
-.h1{
-  font-size: 35px;
-  letter-spacing: 1px;
-  text-align: start;
-  margin-left: 8px;
-  text-transform: uppercase;
-  color: #020617;
-  
+
+.h1 {
+  text-align: center;
+  background-color: yellow;
+  color: black;
 }
-.container-ongoing{
+
+/* Container for Ongoing Complaints */
+.container-ongoing {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.complain-wrap{
+/* Complaint Wrapper */
+.complain-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between name and type */
   align-items: center;
   background-color: #404040;
   border-radius: 20px;
   margin-top: 10px;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 10px; /* Uniform padding */
+  width: 100%;
   cursor: pointer;
 }
 
-.names-complain{
+.names-complain {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 8px;
   margin-bottom: 8px;
-  
 }
 
-.complain-name, .type-complain{
-  margin: 0%;
-  
+.complain-name, .type-complain {
+  margin: 0;
 }
-.complain-name{
-  font-size: 25px;
+
+.complain-name {
+  font-size: 20px;
   letter-spacing: 1px;
   color: #a1a1aa;
   font-weight: 800;
 }
 
-.type-complain{
-  font-size: 20px;
+.type-complain {
+  font-size: 12px;
   font-weight: 600;
   color: #9ca3af;
   letter-spacing: 0.6px;
 }
-.hidden {
-  display: none;
-}
+
+/* Button Container */
 .container-btns {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -149,52 +140,47 @@ header {
   align-items: center; /* Optional: aligns buttons vertically centered */
 }
 
-.container-btns button{
+.container-btns button {
   font-weight: 550;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px; /* Simplified padding */
   width: 100px;
   cursor: pointer;
   letter-spacing: 1px;
   border-radius: 8px;
   border-style: none;
-  background-color:  #d94a29;
+  background-color: #d94a29;
   color: #f5f5f5;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.container-btns button:hover{
+.container-btns button:hover {
   background-color: orangered;
 }
 
-  /*for footer*/
+/* Footer */
+.footer-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 150px;
+}
 
-  .footer-btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 150px;
-  }
-  
-  .btns{
-    font-size: 20px;
-    font-weight: 550;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border-style: none;
-    color: #0c0a09;
-    background-color: #44403c;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-  
-  .btns:hover{
-    background-color: #525252;
-    color: #1c1917;
-  }
+.btns {
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 5px 10px; /* Simplified padding */
+  border-radius: 5px;
+  border-style: none;
+  color: #0c0a09;
+  background-color: #44403c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btns:hover {
+  background-color: #525252;
+  color: #1c1917;
+}
