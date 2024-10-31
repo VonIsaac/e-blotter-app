@@ -37,7 +37,7 @@ async function getDoneData(){
     }
 }
 
-async function markAsDone(id){
+async function markAsDone(id ){
     try{
         const response = await fetch('http://localhost/e-blotter-backend/complainant/done', {
             method: 'POST',
@@ -45,7 +45,8 @@ async function markAsDone(id){
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                complaint_no: id
+                complaint_no: id,
+                
             })
         });
 
@@ -57,6 +58,36 @@ async function markAsDone(id){
         console.log(data)
     }catch(err){
         console.error(err)
+    }
+}
+
+async function viewNote(id, description){
+    
+    try{
+        const response = await fetch('http://localhost/e-blotter-backend/history', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                complain_id: id,
+                description: description // Include description
+            })
+        });
+
+        console.log(response)
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }else{
+            alert('Succesfully Set Apointment')
+        }
+
+        // clear the input fields when submiting
+
+    }catch(err){
+        alert(`An Error Occured${err.message}`)
+        console.log('GOT AN ERROR')
     }
 }
 
@@ -161,12 +192,17 @@ const getAllDoneData = (data) => {
         divsBtns.classList.add('container-btns');
         divsBtns.style.display = 'flex';  // Show buttons
 
+        //creat a tag then link the viewNote page
+        const a =  document.createElement('a')
+       // a.href = '../dashboard/viewnote.html';
+        a.textContent = 'View Note'
         // Create buttons
         const viewNoteBtn = document.createElement('button');
-        viewNoteBtn.textContent = 'View Note';
+        // append the a tag in btn
+        viewNoteBtn.appendChild(a)
 
         viewNoteBtn.addEventListener('click', () => {
-            viewNote(done.id); // Replace with your viewNote function
+            viewNote(done.id, done.name);  // Replace with your viewNote function
         });
 
         // const reOpenBtn = document.createElement('button');

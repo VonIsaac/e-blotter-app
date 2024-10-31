@@ -8,8 +8,6 @@ document.querySelector('.complain-form').addEventListener('submit', async (event
 
         }
 
-
-
     const complaintData = {
         id: generateRandomId(),
         date: document.getElementById('complaint-date').value,

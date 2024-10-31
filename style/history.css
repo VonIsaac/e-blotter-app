@@ -66,19 +66,46 @@ header {
         align-items: center;
 }
 
-.ongoing-elements{
-    background-color: #737373;
-    width: 50%;
-    height: 500px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 8px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    
+.history-elements {
+  background-color: #737373;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 800px; /* Set a maximum width */
+  height: auto; /* Adjust height automatically */
+  padding: 40px; /* Padding for inner spacing */
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 20px 0; /* Space between elements */
 }
 
+.title-history{
+  text-align: center;
+  color: #0c0a09;
+  letter-spacing: 1px;
+  font-size: 35px;
+  background-color: yellow;
+  border-radius: 5px;
+  margin-top: 15px;
+}
 
+.container-history, h1, p{
+  margin: 0%;
+  padding: 0%;
+}
+
+.container-history{
+  margin: 10px 0; /* Space between history entries */
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #404040;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
  /*for footer*/
 
  .footer-btns{
