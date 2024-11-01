@@ -1,5 +1,10 @@
 body {
-    background-color: gray;
+    background-image: url(../public/poblacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px); /* Adjust the blur amount */
+  
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
     margin: 0;
@@ -28,6 +33,11 @@ header {
     font-size: 32px;
   
   }
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .main-container {
     margin-top: 80px;
@@ -52,11 +62,13 @@ header {
 }
 .h1-login{
     text-align: center;
-    color: #a3a3a3;
+    color: #E0E0E0;
     text-transform: uppercase;
-    font-weight: 750;
+    font-weight: 850;
+    letter-spacing: 1px;
     font-size: 45px;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .label-email{
@@ -64,9 +76,11 @@ header {
     text-align: left;
     width: 84%;
     text-transform: uppercase;
-    font-weight: 550;
+    font-weight: 800;
     letter-spacing: 1px;
-    color: #a3a3a3;
+    font-size: 18px;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .input-email{
@@ -78,14 +92,17 @@ header {
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: #1c1917;
-    background-color: #737373;
+    color: #333; /* Dark text color for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+    outline: none; /* Remove default outline */
 }
 
-.input-email:focus{
+.input-email:focus, .input-pass:focus{
     outline: none;
-    color: #1c1917;
-    background-color: #737373;
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow effect */
     
 }
 
@@ -94,9 +111,11 @@ header {
     text-align: left;
     width: 84%;
     text-transform: uppercase;
-    font-weight: 550;
+    font-weight: 800;
     letter-spacing: 1px;
-    color: #a3a3a3;
+    font-size: 18px;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .input-pass{
@@ -108,8 +127,11 @@ header {
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: #1c1917;
-    background-color: #737373; 
+    color: #333; /* Dark text color for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+    outline: none; /* Remove default outline */
 }
 
 .log-in-btn{
@@ -121,23 +143,26 @@ header {
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
-    background-color:#27272a ;
-    color: #a8a29e;
+    background-color:#6C757D ;
+    color: #d4d4d8;
 }
 .log-in-btn:hover{
-    background-color: #525252;
-    color: #27272a;
+    background-color: #d4d4d8; /* Darker blue on hover */
+    color: #6C757D;
     transition: 0.3s ease-in-out;
 }
 
 .p-registerd{
-    color: #a3a3a3;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
 }
 
 .login-a{
     font-weight: 900;
     cursor: pointer;
+    color: grey;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
 .login-a:hover{
@@ -155,13 +180,15 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 .border-login{
     border-style: solid;
     padding-left: 15px;
     padding-right: 15px;
     width: 30rem;
     height: 25rem;
-    background-color: #44403c;
+   background-color: #cbd5e1;
+   background-color: transparent;
     border-radius: 15px;
     border-style: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -189,11 +216,12 @@ a{
 
 .h1-signup{
     text-align: center;
-    color: #a3a3a3;
+    color: #E0E0E0;
     text-transform: uppercase;
     font-weight: 750;
     font-size: 35px;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .signup-center{
@@ -209,9 +237,11 @@ a{
     padding-right: 15px;
     width: 30rem;
     height: 25rem;
-    background-color: #44403c;
+    background-color: #cbd5e1;
+    background-color: transparent;
     border-radius: 15px;
     border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .form-signup{
@@ -228,7 +258,8 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px; 
-    color: #a3a3a3;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
 .input-names{
@@ -240,8 +271,17 @@ a{
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: #1c1917;
-    background-color: #737373;
+    color: #333; /* Dark text color for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.input-names:focus, .input-emails:focus, .input-password:focus{
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow effect */
 }
 .label-emails{
     display: block;
@@ -250,7 +290,8 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px;  
-    color: #a3a3a3;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .input-emails{
@@ -262,8 +303,11 @@ a{
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: #1c1917;
-    background-color: #737373; 
+    color: #333; /* Dark text color for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+    outline: none; /* Remove default outline */
 }
 
 .label-password{
@@ -273,7 +317,8 @@ a{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 1px; 
-    color: #a3a3a3;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .input-password{
@@ -285,8 +330,11 @@ a{
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 15px;
-    color: #1c1917;
-    background-color: #737373;
+    color: #333; /* Dark text color for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Dark text color for readability */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+    outline: none; /* Remove default outline */
 }
 
 .signup-btn{
@@ -298,23 +346,26 @@ a{
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
-    background-color:#27272a ;
-    color: #a8a29e;
+    background-color:#6C757D ;
+    color: #d4d4d8;
 }
 .signup-btn:hover{
-    background-color: #525252;
-    color: #27272a;
+    background-color: #d4d4d8; /* Darker blue on hover */
+    color: #6C757D;
     transition: 0.3s ease-in-out;
 }
 
 .p-signup-registerd{
-    color: #a3a3a3;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
 }
 
 .signup-a{
     font-weight: 900;
     cursor: pointer;
+    color: grey;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
 .signup-a:hover{
