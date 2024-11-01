@@ -41,6 +41,26 @@
         </div>
     </main>
 
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+          <h2>Add Note</h2>
+          <textarea id="noteText" placeholder="Enter your note here..."></textarea>
+          <div class="modal-buttons">
+            <button class="close-btn" onclick="closeModal()">Cancel</button>
+            <button class="submit-btn" onclick="submitNote()">Submit</button>
+          </div>
+        </div>
+      </div>        
+
+      <div id="notes-modal" class="modal-seenotes" style="display: none;">
+        <div class="modal-content">
+            <h2>Notes for Complaint</h2>
+            <div id="notes-container" class="notes-container"></div>
+            <button class="close-button" onclick="closeViewNoteModal()">Close</button>
+        </div>
+    </div>
+    
+
     <footer class="footer-btns">
         <button class="btns">Back</button>
         <button class="btns">Next</button>
