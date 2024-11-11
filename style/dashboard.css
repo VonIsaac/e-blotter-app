@@ -78,6 +78,12 @@ header {
     
 }
 
+.chart-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
  /*for footer*/
 

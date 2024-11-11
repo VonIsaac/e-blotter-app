@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="../style/sidebar.css">
     <link rel="stylesheet" href="../style/dashboard.css">
     <link rel="icon" type="image/jpg" href="../public/logo.jpg">
+
+    <!--Link for grap-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/grap.js"></script>
+    <script src="../js/lineChart.js"></script>
+    <script src="../js/columnchart.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -29,7 +35,16 @@
         </aside>
         <main  class="main-container">
             <div class="ongoing-elements">
-                      
+                <div>
+                    <div class="chart-container">
+                        <div id="piechart" style="width: 600px; height: 150px;"></div>
+                        <div id="curve_chart" style="width: 600px; height: 150px;"></div>
+                        <div id="donutchart" style="width: 600px; height: 150px;"></div>
+                    </div>
+                    <div>
+                        <div id="columnchart_material" style="width: 800px; height: 320px;"></div>
+                    </div>
+                </div> 
             </div>
         </main>
         
@@ -39,5 +54,6 @@
         <button class="btns">Edit</button>
         <button class="btns">Upload </button>
     </footer>
+    
 </body>
 </html>
