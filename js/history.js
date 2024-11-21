@@ -30,8 +30,11 @@ const displayHistoryList = (data) => {
         const wrapData  = document.createElement('div')
         wrapData.classList.add('wrap-container')
 
+        // convert the date into redable format
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const dateHistory = new Date(history.created_at).toLocaleDateString('en-PH', options);
         const dateAndTime = document.createElement('h1')
-        dateAndTime.textContent = `${history.created_at}`
+        dateAndTime.textContent =  dateHistory
 
         wrapData.appendChild(dateAndTime)
 

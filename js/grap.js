@@ -1,21 +1,38 @@
+
+
+async function getSummary() {
+  try{
+    const response = await fetch('http://localhost/e-blotter-backend/summary');
+
+    if(!response.ok){
+      throw new Error(`This is an HTTP error: The status is ${response.status}`);
+    }
+
+    const data = await response.json()
+    console.log(data)
+    drawDonutChart(data)
+  }catch(err){
+    console.log(err)
+  }
+}
+
 google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawCharts);
 
 // creat a function and stored the all chart in obj format
 function drawCharts() {
-  drawDonutChart();
+  getSummary()
   drawPieChart();
 }
 
 // donut chart
-function drawDonutChart() {
+function drawDonutChart(data) {
   var data = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
-    ['Vicar Village', 11],
-    ['Eat', 2],
-    ['NBP RESERVATION', 3],
-    ['Kamela Homes', 3],
-    ['Katarungan Village', 7],
+    ['Total Complains', data.total_complaints],
+    ['Ongoing Complains', data.ongoing_complaints],
+    ['Resolve Conplains', data.resolved_complaints],
+    ['New Complain Today', data.new_complaints_today],
   ]);
 
   var options = {
