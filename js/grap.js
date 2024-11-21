@@ -10,6 +10,7 @@ async function getSummary() {
 
     const data = await response.json()
     console.log(data)
+    // pass the donut fn
     drawDonutChart(data)
   }catch(err){
     console.log(err)
