@@ -28,7 +28,7 @@ document.querySelector('.form-login').addEventListener('submit', async function(
          document.cookie = `user_id=${result.user_id}; path=/;`;
         console.log(result)
         alert('Login successful');
-        window.location.href = './dashboard/complain.html';  
+        window.location.href = '/dashboard/dashboard.html';  
 
       
     } catch (error) {

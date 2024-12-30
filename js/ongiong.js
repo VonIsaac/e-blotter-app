@@ -296,17 +296,17 @@ const getAllDoneData = (data) => {
         const complainName = document.createElement('div');
         complainName.classList.add('names-complain');
 
-        // Create an h1 element to show the complainant name
-        const complainNames = document.createElement('h1');
-        complainNames.classList.add('complain-name');
-        complainNames.textContent = `${done.name}`;
-        complainName.appendChild(complainNames);
-
         // Create a p element to show the type of complain
         const typeComplain = document.createElement('p');
         typeComplain.classList.add('type-complain');
         typeComplain.textContent = `${done.type_of_complaint}`;
         complainName.appendChild(typeComplain);
+
+         // Create an h1 element to show the complainant name
+         const complainNames = document.createElement('h1');
+         complainNames.classList.add('complain-name');
+         complainNames.textContent = `${done.name}`;
+         complainName.appendChild(complainNames);
 
         wrapDiv.appendChild(complainName);
 

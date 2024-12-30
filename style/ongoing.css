@@ -118,17 +118,18 @@ header {
 }
 
 .complain-name {
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
   color: #a1a1aa;
-  font-weight: 800;
+  
 }
 
 .type-complain {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   color: #9ca3af;
-  letter-spacing: 0.6px;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 
 /* Button Container */
